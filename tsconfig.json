@@ -2,14 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": {
-      "@app/*": [
-        "app/*"
-      ],
-      "@assets/*": [
-        "assets/*"
-      ]
-    },
+    "paths": {},
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
