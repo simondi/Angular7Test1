@@ -1,0 +1,39 @@
+header {
+  background: gray;
+
+  .logo {
+    width: 810px;
+    height: 200px;
+    padding: 0;
+  }
+
+  logo img {
+    width: 810px;
+    height: 200px;
+  }
+
+  nav {
+    //justify-self: right;
+    float: right;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        float: left;
+
+        a {
+          padding: 1.5em;
+          text-transform: uppercase;
+          font-size: .8em;
+
+          &:hover {
+            background: #8E2BFF;
+          }
+        }
+      }
+    }
+  }
+}
