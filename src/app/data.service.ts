@@ -12,9 +12,4 @@ export class DataService {
     return this.http.get('https://reqres.in/api/users')
   }
 
-  firstClick() {
-    // h1Style = true;
-    alert("Hello, you Clicked"!)
-  }
-
 }

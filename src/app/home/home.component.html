@@ -7,3 +7,12 @@
     - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
   </li>
 </ul>
+
+
+<ul  >
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <div>{{ user.first_name }} {{ user.last_name }}</div>
+  </li>
+</ul>
+

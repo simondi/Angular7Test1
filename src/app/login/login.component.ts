@@ -5,13 +5,6 @@ import { first } from 'rxjs/operators';
 import { AlertService } from '../_services/alert.service';
 import { AuthenticationService } from '../_services/authentication.service';
 
-
-@Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
-})
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

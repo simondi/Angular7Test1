@@ -1,6 +1,11 @@
 # MyAccount
+The origina of the project:
+1. Initial set up:  https://coursetro.com/posts/code/171/Angular-7-Tutorial---Learn-Angular-7-by-Example
+2. The login part of the project was from: https://stackblitz.com/edit/angular-7-registration-login-example-45ctin?file=app%2Fapp.module.ts
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+
+
 
 ## Development server
 

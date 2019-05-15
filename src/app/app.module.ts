@@ -9,8 +9,8 @@ import { AlertComponent } from './_components/alert/alert.component';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
 
-//import { AppRoutingModule } from './app-routing.module';
-import { routing } from './app-routing.module';
+//import { routing } from './app-routing.module';
+import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
@@ -32,10 +32,10 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    //AppRoutingModule,
+    AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    routing
+    ReactiveFormsModule 
+    //,routing
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

@@ -1,3 +1,8 @@
-<p>
-  about works!
-</p>
+<h1>Users</h1>
+
+<ul *ngIf="Employees">
+  <li *ngFor="let user of Employees.data">
+    <img [src]="user.avatar">
+    <p>{{ user.first_name }} {{ user.last_name }}</p>
+  </li>
+</ul>

@@ -17,10 +17,11 @@ import { AuthenticationService } from '../_services/authentication.service';
 export class HomeComponent implements OnInit, OnDestroy {
   currentUser: User;
   currentUserSubscription: Subscription;
-  users: User[] = [];
+  users: Object;
 
   constructor(
     private authenticationService: AuthenticationService,
+    private data: DataService,
     private userService: UserService
   ) {
     this.currentUserSubscription = this.authenticationService.currentUser.subscribe(user => {
@@ -30,6 +31,11 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.loadAllUsers();
+    this.data.getUsers().subscribe(data => {
+        this.users = data
+        console.log(this.users);
+      }
+    );
   }
 
   ngOnDestroy() {
