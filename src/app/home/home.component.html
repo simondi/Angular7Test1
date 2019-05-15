@@ -1,21 +1,9 @@
-<h1 [ngStyle]="{
-  'color': h1Style ? 'gray' : 'black',
-  'font-size': !h1Style ? '1em' : '2em'
-}">
-  User
-</h1>
-
-
-<button (click)="firstClick()" (focus)="focussed()">Click me</button>
-
-
-<div>
-  <img src="assets/images/logo.png">
-</div>
-
-  <ul *ngIf="users">
-    <li *ngFor="let user of users.data">
-      <img [src]="user.avatar">
-      <div>{{ user.first_name }} {{ user.last_name }}</div>
-    </li>
-  </ul>
+<h1>Hi {{currentUser.firstName}}!</h1>
+<p>You're logged in with Angular 7!!</p>
+<h3>All registered users:</h3>
+<ul>
+  <li *ngFor="let user of users">
+    {{user.username}} ({{user.firstName}} {{user.lastName}})
+    - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+  </li>
+</ul>
