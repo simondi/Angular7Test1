@@ -3,12 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\contact",
+    "\\src\\app\\about",
     "\\src\\app\\home",
     "\\src\\app\\nav",
-    "\\src\\assets",
-    "\\src\\assets\\images"
+    "\\src\\app\\_services"
   ],
-  "SelectedNode": "\\angular.json",
+  "SelectedNode": "\\src\\app\\_services\\data.service.ts",
   "PreviewInSolutionExplorer": false
 }
