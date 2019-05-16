@@ -1,5 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { EmployeeService } from '../_services/employees.service';
+import { DataService } from '../_services/data.service';
+import { MessageService } from '../_services/message.service';
+
 
 @Component({
   selector: 'app-about',
@@ -9,14 +12,17 @@ import { EmployeeService } from '../_services/employees.service';
 
 export class AboutComponent implements OnInit {
 
-  employees: Object;
+  persons: Object;
 
-  constructor(private empl: EmployeeService)   { }
+  constructor(
+    private data: DataService,
+    private messageService: MessageService
+  ) { }
 
   ngOnInit() {
-    this.empl.getEmployees().subscribe(data => {
-      this.employees = data
-      console.log(this.employees);
+    this.data.getUsers().subscribe(data => {
+      this.persons = data
+      console.log(this.persons);
     }
     );
   }

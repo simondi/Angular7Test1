@@ -1,8 +1,19 @@
 <h1>Users</h1>
 
-<ul *ngIf="Employees">
-  <li *ngFor="let user of Employees.data">
-    <img [src]="user.avatar">
-    <p>{{ user.first_name }} {{ user.last_name }}</p>
+<ul >
+  <li *ngFor="let person of persons.data">
+    <img [src]="person.avatar">
+    <p>{{ person.first_name }} {{ person.last_name }}</p>
   </li>
 </ul>
+
+<div *ngIf="messageService.messages.length">
+
+  <h2>Messages</h2>
+  <button class="clear"
+          (click)="messageService.clear()">
+    clear
+  </button>
+  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+
+</div>
