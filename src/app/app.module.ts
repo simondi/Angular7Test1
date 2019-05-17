@@ -18,6 +18,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { LicenseTypesComponent } from './_components/license-types/license-types.component';
+import { LicensesComponent } from './licenses/licenses.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     AlertComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    LicenseTypesComponent,
+    LicensesComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,7 @@ import { LoginComponent } from './login/login.component';
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
     // provider used to create fake backend
-    fakeBackendProvider
+    //  fakeBackendProvider
   ],
   bootstrap: [AppComponent]
 })

@@ -15,13 +15,13 @@ export class AboutComponent implements OnInit {
   persons: Object;
 
   constructor(
-    private data: DataService,
+    private haha: DataService,
     private messageService: MessageService
   ) { }
 
   ngOnInit() {
-    this.data.getUsers().subscribe(data => {
-      this.persons = data
+    this.haha.getUsers().subscribe(x => {
+      this.persons = x
       console.log(this.persons);
     }
     );
