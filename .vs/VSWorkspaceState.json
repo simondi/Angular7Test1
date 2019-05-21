@@ -3,11 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\about",
-    "\\src\\app\\home",
-    "\\src\\app\\nav",
-    "\\src\\app\\_services"
+    "\\src\\app\\contact",
+    "\\src\\app\\licenses",
+    "\\src\\app\\login",
+    "\\src\\app\\register",
+    "\\src\\app\\_components",
+    "\\src\\app\\_components\\license-types",
+    "\\src\\app\\_helpers"
   ],
-  "SelectedNode": "\\src\\app\\_services\\data.service.ts",
+  "SelectedNode": "\\src\\app\\app.component.scss",
   "PreviewInSolutionExplorer": false
 }

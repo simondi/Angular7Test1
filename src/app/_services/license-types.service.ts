@@ -15,6 +15,6 @@ export class LicenseTypesService {
 
   getLicenseTypes() {
     this.messageService.add('Hello, Simon');
-    return this.http.get('https://apidev.consumerprotectionbc.ca/api/License/LicenseTypeList')
+    return this.http.get('https://api.consumerprotectionbc.ca/api/BusinessTradeName?name=abor')
   }
 }
